@@ -5,6 +5,6 @@ RUN apk add \
     rclone
 
 COPY ./app /app
-COPY ./rclone.conf /root/.config/rclone/rclone.conf
+COPY ./rclone.conf ~/.config/rclone/rclone.conf
 
 CMD sh /app/run.sh
