@@ -1,9 +1,6 @@
 name: Notify Translations
 
-on:
-  pull_request_target:
-    types:
-      - labeled
+on: push
 
 jobs:
   notify-translations:
