@@ -9,7 +9,7 @@ today=$(date '+%Y-%m-%d')
 echo $today
 
 echo "running..."
-mkdir -p ./home/backups/$today/
+mkdir -p /home/backups/$today/
 
 mysqldump -uaimigroup -h194.233.86.165 -pzw43uyaoYTJHKGTYFhyuit3435t9w4n8yt8 aimi_dev > /home/backups/$today/aimi_dev.sql
 
