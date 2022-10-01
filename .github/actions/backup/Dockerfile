@@ -1,8 +1,4 @@
-FROM python:3.11-rc-alpine
-
-RUN apk add \
-    postgresql-client \
-    rclone
+FROM quay.io/rizoa/ikamai-backup
 
 COPY ./app /app
 COPY ./rclone.conf /app/rclone.conf
