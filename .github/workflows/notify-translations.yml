@@ -1,0 +1,16 @@
+name: Notify Translations
+
+on:
+  pull_request_target:
+    types:
+      - labeled
+
+jobs:
+  notify-translations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ./.github/actions/notify-translations
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
